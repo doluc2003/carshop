@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+:root {
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-size: 16px;
+  font-family: "Muli", sans-serif;
+}
+.btn {
+  padding: 0.5rem 1rem;
+  background-color: red;
+  text-decoration: none;
+  color: white;
+  border-radius: 0.5rem;
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
+}
+.btn-contain {
+  box-shadow: 0.1rem 0.1rem 0.4rem rgba(255, 0, 0, 0.692);
+}
+.btn-contain:hover {
+  box-shadow: 0.1rem 0.1rem 0.6rem 0.2rem rgba(255, 0, 0, 0.692);
+}
+.btn-outline {
+  background-color: white;
+  border: 0.1rem solid red;
+  color: red;
+  box-sizing: content-box;
+}
+.btn-outline:hover {
+  box-shadow: 0.1rem 0.1rem 0.4rem rgba(255, 0, 0, 0.692);
+}

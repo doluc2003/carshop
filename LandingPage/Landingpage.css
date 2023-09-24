@@ -1,0 +1,106 @@
+.banner {
+  display: flex;
+  align-items: center;
+  width: 1269px;
+  margin: 0 auto;
+}
+.banner-subheader {
+  color: red;
+  font-weight: bold;
+}
+.banner-subheader::before {
+  content: "";
+  margin-right: 0.2rem;
+  line-height: 1rem;
+  display: inline-block;
+  width: 2rem;
+  border-bottom: 2px solid rgb(255, 0, 0);
+}
+.banner-title {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin: 1rem 0;
+}
+.banner-decription {
+  color: rgba(109, 109, 109, 0.897);
+  width: 30rem;
+}
+.home-container {
+  margin: 4rem auto 4rem auto;
+  padding: 0 40px;
+  overflow-x: hidden;
+}
+.banner-right {
+  position: relative;
+}
+.banner-right-img {
+  width: 40rem;
+  z-index: 1;
+  animation: carmove 2s forwards;
+}
+@keyframes carmove {
+  from {
+    opacity: 0.8;
+
+    transform: translate(100px, -100px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+.banner-left {
+  animation: text-right 2s forwards;
+}
+@keyframes text-right {
+  from {
+    transform: translate(-500px, 0);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+.banner-right::before {
+  position: absolute;
+  z-index: -1;
+  left: 4rem;
+  display: inline-block;
+  content: "";
+  width: 40rem;
+  height: 30rem;
+  border-radius: 10rem 0 0 10rem;
+  background-color: rgba(255, 0, 0, 0.507);
+}
+.btn-group {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 18rem;
+}
+.car-list {
+  background-color: white;
+  height: max-content;
+  padding: 20px;
+}
+.car-grid {
+  height: max-content;
+}
+.car-paper {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 20rem;
+  box-shadow: 0 0 0.1rem 0.1rem rgba(196, 196, 196, 0.603);
+}
+.car-img {
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.1rem 0.1rem rgba(196, 196, 196, 0.603);
+  width: 18rem;
+  background-color: rgba(202, 202, 202, 0.692);
+}
+.btn-buy {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
