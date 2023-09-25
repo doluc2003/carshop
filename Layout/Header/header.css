@@ -10,6 +10,9 @@
   padding: 1rem 2rem;
   margin: auto;
 }
+.active a {
+  color: red !important;
+}
 .nav-container {
   list-style: none;
   font-weight: bold;

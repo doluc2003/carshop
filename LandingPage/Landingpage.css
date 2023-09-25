@@ -89,18 +89,47 @@
 .car-paper {
   background-color: white;
   border-radius: 0.5rem;
-  padding: 1rem;
-  width: 20rem;
+  padding: 2rem;
+  width: 23rem;
   box-shadow: 0 0 0.1rem 0.1rem rgba(196, 196, 196, 0.603);
 }
 .car-img {
   border-radius: 0.5rem;
   box-shadow: 0 0 0.1rem 0.1rem rgba(196, 196, 196, 0.603);
-  width: 18rem;
+  width: 100%;
   background-color: rgba(202, 202, 202, 0.692);
 }
 .btn-buy {
   text-align: center;
   display: inline-block;
   width: 100%;
+}
+/* carlist */
+.car-list {
+  overflow-x: hidden;
+  margin: auto;
+  width: 1269px;
+}
+.catagorise {
+  width: 800px;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand-icon {
+  width: 2rem;
+}
+.Brand-chip {
+  font-weight: bolder;
+  border-radius: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 0.1rem 0.4rem 0.2rem rgba(189, 189, 189, 0.438);
+}
+.car-grid {
+  justify-content: space-around;
+  display: flex;
 }

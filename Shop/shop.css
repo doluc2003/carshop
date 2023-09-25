@@ -1,8 +1,32 @@
 .container {
-  margin: 4rem auto 4rem auto;
-  padding: 0 40px;
+  margin: 2.3rem auto 0 auto;
   overflow-x: hidden;
-  background-color: red;
-  width: 1246px;
+  border: 1px solid black;
+  width: 1269px;
   height: 100vh;
+  padding: 1rem;
+  position: relative;
+}
+.fillter-container {
+  position: fixed;
+  height: 100vh;
+  padding: 1rem;
+  width: fit-content;
+  overflow-x: scroll;
+}
+.inp-check {
+  font-size: 30px;
+}
+.inp-search {
+  outline: none;
+  border: none;
+  box-shadow: 0 0 0.2rem 0.2rem rgba(233, 233, 233, 0.658);
+  padding: 0.3rem 0.7rem;
+  font-size: 1.1rem;
+  border-radius: 0.5rem;
+}
+.search-content {
+  padding: 3rem 1rem;
+  border: 0.2rem black dashed;
+  border-radius: 2rem;
 }

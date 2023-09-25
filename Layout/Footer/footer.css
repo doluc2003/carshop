@@ -1,0 +1,16 @@
+.container-footer {
+  width: 1264px;
+  margin: auto;
+  display: flex;
+  padding: 2rem;
+  align-items: start;
+  justify-content: space-between;
+}
+.wapper-footer {
+  background-color: #1d2124;
+  color: white;
+  width: 100%;
+}
+.line {
+  margin-top: 0.5rem;
+}

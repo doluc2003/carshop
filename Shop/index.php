@@ -7,26 +7,52 @@
     <style type="text/css">
          <?php include "../Assets/css/main.css"?>
         <?php include "../Layout/Header/header.css"?>
-       
+        <?php include "../Shop/shop.css" ?>
    </style>
 </head>
 <body>
 <?php 
+$page ="shop";
 require "../Layout/Header/index.php";       
 ?>
 <button class="btn btn-contain">ádfádfádf</button>
 <!-- start content -->
     <div class="container">
-        <div class="fillter"></div>
+        <div class="fillter-container">
+            <div class="search-content">
+                <h2>Tìm kiếm ô tô theo tên </h2>
+                    <input type="text" name="" placeholder="Tìm kiếm theo tên" class="inp-search"> <button class="btn btn-contain">tìm</button>
+                    
+            </div>
+            <div class="chk-group">
+   
+            </div>
+            <div class="chk-group">
+            <input type="checkbox" class="inp-check" name="ch2" >
+            <label for="ch2">xe ô tô 1 </label>
+            </div>
+            <div class="chk-group">
+            <input type="checkbox" class="inp-check" name="ch2" >
+            <label for="ch2">xe ô tô 1 </label>
+            </div>
+            <div class="chk-group">
+            <input type="checkbox" class="inp-check" name="ch4" >
+            <label for="ch4">xe ô tô 1 </label>
+            </div>
+            <div>
+                <h2>Chọn khoảng giá</h2>
+                <div>
+                    <input type="number" name="" id="">
+                    <input type="number" name="" id="">
+                </div>
+            </div>
+        </div>
         <div>
-            <button>anh duc</button>
-            <!-- containt -->
-            <p>fioáhdfoi;lkhádiklfhailóudh filúa dhfiou áhdio;ùh áioduhf ilo áudhfilouahsdfiouhádiloùhaiódhfioádhfoi;hádik;flháoi;dfho;ilaksdhfo;ádfkjh sdfjálkdfhjládkf
-                sdfádfádfádfádfádfádfádfádfádfádfádfádfádfádfád ádfá df ádf ádf ádf ádfádfádfsadfá
-            </p>
-            <input type="text">
+            <div>
+
+            </div>
         </div>
     </div>
-    <?php include "../carShop/Shop/shop.css" ?>
+   
 </body>
 </html>
