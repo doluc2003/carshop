@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
    <style>
+    
          <?php include "../../carShop/Assets/css/main.css"?>
         <?php include "../Layout/Header/header.css"?>
         <?php include "../../carShop/LandingPage/Landingpage.css" ?>
+        <?php include "../Layout/Footer/footer.css"?>
    </style>
 </head>
 <body>
     <?php 
+        $page ="Home";
         require "../Layout/Header/index.php";       
     ?>
     <!-- start banner -->
@@ -34,25 +37,74 @@
             <img class="banner-right-img" src="../Assets/img/car.png" alt="">
         </div>
         </div>
-        
+    
     </div>
     <!-- end banner -->
+    <!-- mainFeature -->
+    <div class="abousus-container">
+    <div class="aboutus-left">
+
+    </div>
+    <div class="aboutus-right">
+        
+    </div> 
+    </div>
     <!-- Start car list -->
     <div class="car-list">
                 <h2 style="text-align: center;">Top xe bán chạy nhất </h2>
                 <div class="catagorise">
-                    <div></div>
+                    <div class="Brand-chip">
+                        <img class="brand-icon" src="../Assets/img/Honda.png" alt="">
+                        <div>Honda</div>
+                    </div>
+                    <div class="Brand-chip">
+                        <img class="brand-icon" src="../Assets/img/toyota_logo_icon_249373.png" alt="">
+                        <div>Toyota</div>
+                    </div>
+                    <div class="Brand-chip">
+                        <img class="brand-icon" src="../Assets/img/nissan_logo_icon_248364.png" alt="">
+                        <div>Nissan</div>
+                    </div>
+                    <div class="Brand-chip">
+                        <img class="brand-icon" src="../Assets/img/mazda_logo_icon_145801.png" alt="">
+                        <div>Mazda</div>
+                    </div>
+                    <div class="Brand-chip">
+                        <img class="brand-icon" src="../Assets/img/audi_logo_icon_247535.png" alt="">
+                        <div>Audi</div>
+                    </div>
                 </div>
                 <div class="car-grid">
                     <div class="car-paper">
                             <img class="car-img" src="../Assets/img/car2.png" alt="">
-                            <h4 class="car-name"></h4>
-                            <h4 class="price">2.000.000.000 vnđ</h4>
+                            <h4 class="car-name">CAMRY 2.5Q</h4>
+                            <h4 class="price" style="color: red"> 1.405.000.000 vnđ</h4>
                             <h4 class="fill"></h4>
-                            <h5 class="catagorise">3 triệu</h5>
+                            <h5 class="catagorise">icon : Toyota</h5>
                             <a href="" class="btn btn-contain btn-buy">Mua </a>
                     </div>
+                    <div class="car-paper">
+                            <img class="car-img" src="../Assets/img/car2.png" alt="">
+                            <h4 class="car-name">CAMRY 2.5Q</h4>
+                            <h4 class="price" style="color: red"> 1.405.000.000 vnđ</h4>
+                            <h4 class="fill"></h4>
+                            <h5 class="catagorise">icon : Toyota</h5>
+                            <a href="" class="btn btn-contain btn-buy">Mua </a>
+                    </div>
+                    <div class="car-paper">
+                            <img class="car-img" src="../Assets/img/car2.png" alt="">
+                            <h4 class="car-name">CAMRY 2.5Q</h4>
+                            <h4 class="price" style="color: red"> 1.405.000.000 vnđ</h4>
+                            <h4 class="fill"></h4>
+                            <h5 class="catagorise">icon : Toyota</h5>
+                            <a href="" class="btn btn-contain btn-buy">Mua </a>
+                    </div>
+                   
                 </div>
         </div>
+        <?php 
+      
+        require "../Layout/Footer/index.php";       
+    ?>
 </body>
 </html>

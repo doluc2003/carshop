@@ -1,0 +1,8 @@
+.container {
+  margin: 4rem auto 4rem auto;
+  padding: 0 40px;
+  overflow-x: hidden;
+  background-color: red;
+  width: 1246px;
+  height: 100vh;
+}
