@@ -40,18 +40,12 @@
     
     </div>
     <!-- end banner -->
-    <!-- mainFeature -->
-    <div class="abousus-container">
-    <div class="aboutus-left">
-
-    </div>
-    <div class="aboutus-right">
-        
-    </div> 
-    </div>
-    <!-- Start car list -->
-    <div class="car-list">
-                <h2 style="text-align: center;">Top xe bán chạy nhất </h2>
+       <!-- Start car list -->
+       <div class="car-list">
+                <h2 class="banner-title" style="text-align: center;">Top xe bán chạy nhất </h2>
+                <div class="divider" style="margin:1rem auto"></div>
+                <div class="divider" style="width:7rem ;margin:1rem auto"></div>
+                
                 <div class="catagorise">
                     <div class="Brand-chip">
                         <img class="brand-icon" src="../Assets/img/Honda.png" alt="">
@@ -76,11 +70,12 @@
                 </div>
                 <div class="car-grid">
                     <div class="car-paper">
+                            <!-- <div class="car-img" style='background-image: url("../Assets/img/1be5274f950e1a3efe42894675f002cc.jpg");'></div> -->
                             <img class="car-img" src="../Assets/img/car2.png" alt="">
                             <h4 class="car-name">CAMRY 2.5Q</h4>
                             <h4 class="price" style="color: red"> 1.405.000.000 vnđ</h4>
                             <h4 class="fill"></h4>
-                            <h5 class="catagorise">icon : Toyota</h5>
+                            <!-- <h5 class="catagorise">icon : Toyota</h5> -->
                             <a href="" class="btn btn-contain btn-buy">Mua </a>
                     </div>
                     <div class="car-paper">
@@ -88,7 +83,7 @@
                             <h4 class="car-name">CAMRY 2.5Q</h4>
                             <h4 class="price" style="color: red"> 1.405.000.000 vnđ</h4>
                             <h4 class="fill"></h4>
-                            <h5 class="catagorise">icon : Toyota</h5>
+                            <!-- <h5 class="catagorise">icon : Toyota</h5> -->
                             <a href="" class="btn btn-contain btn-buy">Mua </a>
                     </div>
                     <div class="car-paper">
@@ -96,14 +91,76 @@
                             <h4 class="car-name">CAMRY 2.5Q</h4>
                             <h4 class="price" style="color: red"> 1.405.000.000 vnđ</h4>
                             <h4 class="fill"></h4>
-                            <h5 class="catagorise">icon : Toyota</h5>
+                            <!-- <h5 class="catagorise">icon : Toyota</h5> -->
                             <a href="" class="btn btn-contain btn-buy">Mua </a>
                     </div>
                    
                 </div>
+    </div>
+    <!-- end carList -->
+    <!-- mainFeature -->
+    <div class="aboutus-wapper">
+        <div class="abousus-container">
+        <div class="aboutus-left">
+                <img src="../Assets/img/Land Prado-Do-3R3.png" class="img-aubotUs" alt="">
         </div>
+        <div class="aboutus-right">
+            <h2 style="color:red">Về chúng tôi</h2>
+            <h1 class="banner-title">Chúng tôi luôn đặt lợi ích của khách hàng lên hàng đầu</h1>
+            <div class="divider" style="width:7rem"></div>
+            <div class="divider"></div>
+            <p class="aboutus-decription">SolarFare là một cửa hàng showroom ô tô tại địa điểm của chúng tôi. 
+                Chúng tôi tự hào là địa điểm hàng đầu cho những người yêu đam mê ô tô 
+                và đang tìm kiếm những chiếc xe hàng đầu và dịch vụ tốt nhất. Tại SolarFare,
+                 chúng tôi cam kết cung cấp những sản phẩm và dịch vụ chất lượng cao, đáp ứng mọi nhu cầu của khách hàng.
+            </p>
+            <p class="aboutus-decription">
+            Tầm nhìn của chúng tôi là trở thành một trong những showroom ô tô hàng đầu, 
+            được biết đến với sự xuất sắc trong việc cung cấp các dòng xe solar và những sản phẩm liên quan.
+             Chúng tôi luôn nỗ lực để đáp ứng các tiêu chuẩn cao nhất trong ngành và tạo ra trải nghiệm mua sắm độc đáo cho khách hàng của mình.
+            </p>
+        </div> 
+        </div>
+    </div>
+ 
+    <div class="news-wapper">
+        <h2 class="banner-title" style="text-align: center;">Tin Tức & sự kiện </h2>
+        <div class="divider" style="margin:1rem auto"></div>
+        <div class="divider" style="width:7rem ;margin:1rem auto"></div>
+                
+        <div class="new-list">
+                <div  class="new-item">
+                    <div class="new-item-img" style='background-image: url("../Assets/img/1be5274f950e1a3efe42894675f002cc.jpg");' >
+                        <span class="new-item-time">
+                            26/9/2023
+                        </span>
+                         </div>      
+                    <div class="new-title">Toyota Việt Nam chính thức giới thiệu Toyota Yaris Cross hoàn toàn mới </div>  
+                    <a class="new-link" href="">Tìm hiểu thêm</a>
+                </div>
+                <div  class="new-item">
+                    <div class="new-item-img" style='background-image: url("../Assets/img/466B91013467AEE8C6DC6E14B5F99436.jpg");' >
+                        <span class="new-item-time">
+                            26/9/2023
+                        </span>
+                         </div>      
+                    <div class="new-title">Toyota Việt Nam chính thức giới thiệu Toyota Yaris Cross hoàn toàn mới </div>  
+                    <a class="new-link" href="">Tìm hiểu thêm</a>
+                </div>
+                <div  class="new-item">
+                    <div class="new-item-img" style='background-image: url("../Assets/img/apple-carplay.jpeg");' >
+                        <span class="new-item-time">
+                            26/9/2023
+                        </span>
+                         </div>      
+                    <div class="new-title">Toyota Việt Nam chính thức giới thiệu Toyota Yaris Cross hoàn toàn mới </div>  
+                    <a class="new-link" href="">Tìm hiểu thêm</a>
+                </div>
+               
+        </div>
+    </div>
+    <!-- end news -->
         <?php 
-      
         require "../Layout/Footer/index.php";       
     ?>
 </body>

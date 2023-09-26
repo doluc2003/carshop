@@ -18,8 +18,10 @@
 }
 .banner-title {
   font-size: 3rem;
-  font-weight: bolder;
+  font-weight: 400;
+  line-height: 3rem;
   margin: 1rem 0;
+  font-family: "Lalezar", cursive;
 }
 .banner-decription {
   color: rgba(109, 109, 109, 0.897);
@@ -82,6 +84,7 @@
   background-color: white;
   height: max-content;
   padding: 20px;
+  margin: 4rem 0;
 }
 .car-grid {
   height: max-content;
@@ -97,6 +100,7 @@
   border-radius: 0.5rem;
   box-shadow: 0 0 0.1rem 0.1rem rgba(196, 196, 196, 0.603);
   width: 100%;
+
   background-color: rgba(202, 202, 202, 0.692);
 }
 .btn-buy {
@@ -132,4 +136,80 @@
 .car-grid {
   justify-content: space-around;
   display: flex;
+}
+/* aboutus */
+.img-aubotUs {
+  transform: rotateY(180deg);
+  width: 44rem;
+}
+.aboutus-wapper {
+  background-color: rgb(128 128 128 / 8%);
+}
+.abousus-container {
+  height: fit-content;
+  padding: 4rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1269px;
+  margin: auto;
+}
+.aboutus-right {
+  width: 48rem;
+}
+.aboutus-decription {
+  font-weight: 600;
+  color: #747474c4;
+  margin-bottom: 1rem;
+}
+.divider {
+  margin: 0.5rem 0;
+  border: 2px solid red;
+  width: 10rem;
+}
+/* new */
+.new-item-img {
+  border-radius: 1rem;
+  height: fit-content;
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-image: url(../Assets/img/42A36FD9E56EAA244D5434AC6162FEC7.png);
+}
+.new-item {
+  width: 376px;
+  padding: 1rem;
+}
+.new-list {
+  width: 1269px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.new-item-time {
+  top: 0.5rem;
+  right: 0.5rem;
+  border-radius: 10px;
+  padding: 0.5rem;
+  background-color: red;
+  color: white;
+  font-weight: 400;
+  position: absolute;
+}
+.new-title {
+  padding: 1rem 0;
+  font-weight: bold;
+}
+.new-link {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+}
+.news-wapper {
+  margin: 4rem 0;
 }

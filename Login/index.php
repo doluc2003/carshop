@@ -27,7 +27,9 @@
         </div>
 
         </form>
-        
+        <?php
+            if($_SERVER['request.post'])
+        ?>
     </div>
 </body>
 </html>
