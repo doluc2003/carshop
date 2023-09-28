@@ -69,32 +69,27 @@
                     </div>
                 </div>
                 <div class="car-grid">
-                    <div class="car-paper">
-                            <!-- <div class="car-img" style='background-image: url("../Assets/img/1be5274f950e1a3efe42894675f002cc.jpg");'></div> -->
-                            <img class="car-img" src="../Assets/img/car2.png" alt="">
+                    <div class="car-paper">                       
+                            <div class="car-img2" style='background-image: url("../Assets/img/1be5274f950e1a3efe42894675f002cc.jpg");'></div>                        
                             <h4 class="car-name">CAMRY 2.5Q</h4>
                             <h4 class="price" style="color: red"> 1.405.000.000 vnđ</h4>
-                            <h4 class="fill"></h4>
-                            <!-- <h5 class="catagorise">icon : Toyota</h5> -->
+                            <h4 class="fill"></h4>                          
                             <a href="" class="btn btn-contain btn-buy">Mua </a>
                     </div>
                     <div class="car-paper">
-                            <img class="car-img" src="../Assets/img/car2.png" alt="">
+                    <div class="car-img2" style='background-image: url("../Assets/img/1be5274f950e1a3efe42894675f002cc.jpg");'></div>
                             <h4 class="car-name">CAMRY 2.5Q</h4>
                             <h4 class="price" style="color: red"> 1.405.000.000 vnđ</h4>
-                            <h4 class="fill"></h4>
-                            <!-- <h5 class="catagorise">icon : Toyota</h5> -->
+                            <h4 class="fill"></h4>                        
                             <a href="" class="btn btn-contain btn-buy">Mua </a>
                     </div>
                     <div class="car-paper">
-                            <img class="car-img" src="../Assets/img/car2.png" alt="">
+                    <div class="car-img2" style='background-image: url("../Assets/img/1be5274f950e1a3efe42894675f002cc.jpg");'></div>
                             <h4 class="car-name">CAMRY 2.5Q</h4>
                             <h4 class="price" style="color: red"> 1.405.000.000 vnđ</h4>
-                            <h4 class="fill"></h4>
-                            <!-- <h5 class="catagorise">icon : Toyota</h5> -->
+                            <h4 class="fill"></h4>                         
                             <a href="" class="btn btn-contain btn-buy">Mua </a>
-                    </div>
-                   
+                    </div>                  
                 </div>
     </div>
     <!-- end carList -->

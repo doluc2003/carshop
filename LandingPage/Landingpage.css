@@ -96,6 +96,19 @@
   width: 23rem;
   box-shadow: 0 0 0.1rem 0.1rem rgba(196, 196, 196, 0.603);
 }
+.car-img2 {
+  height: 200px;
+  width: 100%;
+  background-position: center;
+  background-size: 100%;
+  border-radius: 10px;
+}
+.car-name {
+  margin: 1rem 0;
+}
+.price {
+  margin: 1rem 0;
+}
 .car-img {
   border-radius: 0.5rem;
   box-shadow: 0 0 0.1rem 0.1rem rgba(196, 196, 196, 0.603);

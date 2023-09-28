@@ -28,7 +28,14 @@
 
         </form>
         <?php
-            if($_SERVER['request.post'])
+            if($_SERVER['REQUEST_METHOD']=="POST"){
+
+                if($_POST["username"]=="admin" && $_POST["password"]){
+                    session_start();
+                    $_SESSION["name"]
+                }
+               
+            }
         ?>
     </div>
 </body>
