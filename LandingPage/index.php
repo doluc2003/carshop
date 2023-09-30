@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
    <style>
-    
          <?php include "../../carShop/Assets/css/main.css"?>
         <?php include "../Layout/Header/header.css"?>
         <?php include "../../carShop/LandingPage/Landingpage.css" ?>
@@ -72,24 +71,94 @@
                     <div class="car-paper">                       
                             <div class="car-img2" style='background-image: url("../Assets/img/1be5274f950e1a3efe42894675f002cc.jpg");'></div>                        
                             <h4 class="car-name">CAMRY 2.5Q</h4>
-                            <h4 class="price" style="color: red"> 1.405.000.000 vnđ</h4>
-                            <h4 class="fill"></h4>                          
+                            <h4 class="price" >
+                            <span class="concept">giá từ:</span>
+                            <span style="color: red" class="value">1.405.000.000 vnđ</span>
+                            </h4>
+                            <div class="container-concept">
+                                <div class="concept-content">
+                                    <span class="concept">thương hiệu:</span>
+                                    <span class="value">Toyota</span>
+                                </div>
+                                <div class="concept-content">
+                                    <span class="concept">Kiểu Dáng:</span>
+                                    <span class="value">sedan</span>
+                                </div>                            
+                            </div>
+                            <div class="container-concept">
+                            <div class="concept-content">
+                                    <span class="concept">Chỗ Ngồi:</span>
+                                    <span class="value">5</span>
+                                </div>                            
+                                <div class="concept-content">
+                                    <span class="concept">xuất xứ:</span>
+                                    <span class="value">Indonecia</span>
+                                </div>
+                                
+                            </div>                         
                             <a href="" class="btn btn-contain btn-buy">Mua </a>
                     </div>
-                    <div class="car-paper">
-                    <div class="car-img2" style='background-image: url("../Assets/img/1be5274f950e1a3efe42894675f002cc.jpg");'></div>
+                    <div class="car-paper">                       
+                            <div class="car-img2" style='background-image: url("../Assets/img/1be5274f950e1a3efe42894675f002cc.jpg");'></div>                        
                             <h4 class="car-name">CAMRY 2.5Q</h4>
-                            <h4 class="price" style="color: red"> 1.405.000.000 vnđ</h4>
-                            <h4 class="fill"></h4>                        
+                            <h4 class="price" >
+                            <span class="concept">giá từ:</span>
+                            <span style="color: red" class="value">1.405.000.000 vnđ</span>
+                            </h4>
+                            <div class="container-concept">
+                                <div class="concept-content">
+                                    <span class="concept">thương hiệu:</span>
+                                    <span class="value">Toyota</span>
+                                </div>
+                                <div class="concept-content">
+                                    <span class="concept">Kiểu Dáng:</span>
+                                    <span class="value">sedan</span>
+                                </div>                            
+                            </div>
+                            <div class="container-concept">
+                            <div class="concept-content">
+                                    <span class="concept">Chỗ Ngồi:</span>
+                                    <span class="value">5</span>
+                                </div>                            
+                                <div class="concept-content">
+                                    <span class="concept">xuất xứ:</span>
+                                    <span class="value">Indonecia</span>
+                                </div>
+                                
+                            </div>                         
                             <a href="" class="btn btn-contain btn-buy">Mua </a>
                     </div>
-                    <div class="car-paper">
-                    <div class="car-img2" style='background-image: url("../Assets/img/1be5274f950e1a3efe42894675f002cc.jpg");'></div>
+                    <div class="car-paper">                       
+                            <div class="car-img2" style='background-image: url("../Assets/img/1be5274f950e1a3efe42894675f002cc.jpg");'></div>                        
                             <h4 class="car-name">CAMRY 2.5Q</h4>
-                            <h4 class="price" style="color: red"> 1.405.000.000 vnđ</h4>
-                            <h4 class="fill"></h4>                         
+                            <h4 class="price" >
+                            <span class="concept">giá từ:</span>
+                            <span style="color: red" class="value">1.405.000.000 vnđ</span>
+                            </h4>
+                            <div class="container-concept">
+                                <div class="concept-content">
+                                    <span class="concept">thương hiệu:</span>
+                                    <span class="value">Toyota</span>
+                                </div>
+                                <div class="concept-content">
+                                    <span class="concept">Kiểu Dáng:</span>
+                                    <span class="value">sedan</span>
+                                </div>                            
+                            </div>
+                            <div class="container-concept">
+                            <div class="concept-content">
+                                    <span class="concept">Chỗ Ngồi:</span>
+                                    <span class="value">5</span>
+                                </div>                            
+                                <div class="concept-content">
+                                    <span class="concept">xuất xứ:</span>
+                                    <span class="value">Indonecia</span>
+                                </div>
+                                
+                            </div>                         
                             <a href="" class="btn btn-contain btn-buy">Mua </a>
-                    </div>                  
+                    </div>
+                    
                 </div>
     </div>
     <!-- end carList -->

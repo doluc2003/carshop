@@ -1,26 +1,36 @@
-.container {
-  margin: 2.3rem auto 0 auto;
+.container-shop {
+  margin: 3rem auto 0 auto;
   padding: 1rem;
   position: relative;
 }
 .fillter-container {
   position: fixed;
-  height: 100vh;
+  top: 8rem;
+  height: fit-content;
   width: 15rem;
   padding: 1rem;
-
-  overflow-x: scroll;
+}
+.fillter-header {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+  align-items: center;
+  position: fixed;
+  z-index: 2;
+  background-color: white;
+  width: 100%;
 }
 .inp-check {
   font-size: 30px;
 }
 .inp-search {
+  width: 50rem;
   outline: none;
   border: none;
   box-shadow: 0 0 0.2rem 0.2rem rgba(233, 233, 233, 0.658);
   padding: 0.3rem 0.7rem;
   font-size: 1.1rem;
-  border-radius: 0.5rem;
+  border-radius: 0.2rem;
 }
 .search-content {
   padding: 3rem 1rem;
@@ -34,8 +44,14 @@
   width: 20rem;
   box-shadow: 0 0 0.1rem 0.1rem rgba(196, 196, 196, 0.603);
 }
+.car-paper:hover .car-img2 {
+  background-size: 150%;
+}
+.car-paper:hover {
+  box-shadow: 0 0 0.8rem 0.2rem rgba(255, 0, 0, 0.623);
+}
 .car-img2 {
-  height: 150px;
+  height: 180px;
   background-position: center;
   background-size: 100%;
   border-radius: 10px;
@@ -43,6 +59,7 @@
 }
 .car-name {
   margin: 1rem 0;
+  text-align: center;
 }
 .price {
   margin: 1rem 0;
@@ -71,4 +88,55 @@
   justify-content: start;
   flex-wrap: wrap;
   gap: 1.4rem;
+}
+.container-concept {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.concept {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.value {
+  font-weight: 600;
+}
+.pagination-container {
+  margin: auto;
+  width: fit-content;
+}
+.pagination-container > a {
+  text-decoration: none;
+  color: black;
+  margin: 5px;
+  padding: 5px 10px;
+}
+.pagination-container > a:hover {
+  background-color: red;
+  border-radius: 20rem;
+  color: white;
+}
+
+.page-active {
+  background-color: red;
+  border-radius: 20rem;
+  color: white !important;
+}
+.select-sort {
+  border: 1px solid rgba(165, 165, 165, 0.644);
+  font-size: 400;
+  font-family: "Muli", sans-serif;
+  border-radius: 0.2rem;
+  outline: none;
+  padding: 0.5rem 0.5rem;
+  display: inline-block !important;
+  width: fit-content !important;
+}
+.select-sort :active {
+  background-color: red;
+}
+.select-sort:focus {
+  border-color: red !important;
+  box-shadow: 0 0 0 0.2rem rgb(255, 125, 125) !important;
 }

@@ -1,0 +1,10 @@
+.nav {
+  list-style: none;
+}
+.nav-content {
+  color: red;
+}
+.nav-link {
+  text-decoration: none;
+  color: black;
+}

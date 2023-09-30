@@ -17,11 +17,10 @@
         </div>
         <ul class="nav-container">
             <li class="<?php if($page =='Home'){echo 'nav-content active'; }else {echo 'nav-content ';}?>"><a href="http://localhost/carShop/LandingPage/index.php" class="nav-child">Trang Chủ</a></li>
-            <li class="<?php if($page =='shop'){echo 'nav-content active'; }else {echo 'nav-content ';}?>"><a href="http://localhost/carShop/Shop/index.php" class="nav-child">Mua xe</a></li>
+            <li class="<?php if($page =='shop'){echo 'nav-content active'; }else {echo 'nav-content ';}?>"><a href="http://localhost/carShop/Shop/index.php?page=1" class="nav-child">Mua xe</a></li>
             <li class="<?php if($page =='linhkien'){echo 'nav-content active'; }else {echo 'nav-content ';}?>"><a href="" class="nav-child">Mua Linh Kiện</a></li>
-            
-            <li class="<?php if($page =='tintuc'){echo 'nav-content active'; }else {echo 'nav-content ';}?>"><a href="" class="nav-child">Tin Tức</a></li>
-            <li class="<?php if($page =='tintuc'){echo 'nav-content active'; }else {echo 'nav-content ';}?>"><a href="http://localhost/carShop/abc/index.php" class="nav-child">địt mẹ</a></li>
+            <li class="<?php if($page =='abc'){echo 'nav-content active'; }else {echo 'nav-content ';}?>"><a href="http://localhost/carShop/manageCar/index.php" class="nav-child">abc</a></li>
+            <li class="<?php if($page =='tintuc'){echo 'nav-content active'; }else {echo 'nav-content ';}?>"><a href="http://localhost/carShop/abc/index.php" class="nav-child">Tin Tức</a></li>
         </ul>
         <div class="header-login">
                 <a class="btn btn-contain" href="http://localhost/carShop/Login/index.php">Đăng nhập</a>
