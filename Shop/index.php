@@ -1,3 +1,7 @@
+<?php
+    ob_start();
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,6 +27,7 @@ require "../Layout/Header/index.php";
     <div class="container-shop">  
         <form id="form" method="get" action="">
             <div class="fillter-header">
+                
             <h2>Bộ lọc</h2>
             <?php 
             $search ="";
@@ -53,7 +58,7 @@ require "../Layout/Header/index.php";
                 <div class="chk-group"> 
                 <h2>Kiểu dáng</h2>
                 <?php 
-                    $conn = mysqli_connect('localhost','root','','db_solarflare');
+                    $conn = mysqli_connect('localhost','root','','carshop');
                     $sql = "SELECT * FROM `tbl_model` ";
                     $model = mysqli_query($conn,$sql);
                     
@@ -208,13 +213,13 @@ require "../Layout/Header/index.php";
                 }
                 //xử lý phân trang 
                 $results_per_page = 6;
-                $sql = "SELECT c.name as name ,c.imgurl,b.name as brand ,c.seats,c.country,c.price,m.name  as model  FROM tbl_car c
+                $sql = "SELECT c.id, c.name as name ,c.imgurl,b.name as brand ,c.seats,c.country,c.price,m.name  as model  FROM tbl_car c
                     JOIN tbl_model m ON m.id = c.modelId
                     JOIN tbl_brand b ON b.id = c.brandId
                     GROUP BY c.name";
                     
                  if( $modelvalue!= ""||  $brandvalue!="" || !empty($_GET["sort"]) || !empty($_GET["search"]) || !empty($_GET["price"])){
-                    $sql = "SELECT c.name as name ,c.imgurl,b.name as brand ,c.seats,c.country,c.price,m.name as model FROM tbl_car c
+                    $sql = "SELECT c.id, c.name as name ,c.imgurl,b.name as brand ,c.seats,c.country,c.price,m.name as model FROM tbl_car c
                     JOIN tbl_model m ON m.id = c.modelId
                     JOIN tbl_brand b ON b.id = c.brandId
                     $conditional
@@ -236,14 +241,14 @@ require "../Layout/Header/index.php";
                     
                     }
                     $page_first_result = ($page-1) * $results_per_page;
-                $sql = "SELECT c.name as name ,c.imgurl,b.name as brand ,c.seats,c.country,c.price,m.name  as model  FROM tbl_car c
+                $sql = "SELECT c.id, c.name as name ,c.imgurl,b.name as brand ,c.seats,c.country,c.price,m.name  as model  FROM tbl_car c
                     JOIN tbl_model m ON m.id = c.modelId
                     JOIN tbl_brand b ON b.id = c.brandId
                    
                     GROUP BY c.name
                     LIMIT ". $page_first_result . "," . $results_per_page;
                  if( $modelvalue!= ""||  $brandvalue!="" || !empty($_GET["sort"]) || $search || !empty($_GET["price"])){
-                    $sql = "SELECT c.name as name ,c.imgurl,b.name as brand ,c.seats,c.country,c.price,m.name as model FROM tbl_car c
+                    $sql = "SELECT c.id, c.name as name ,c.imgurl,b.name as brand ,c.seats,c.country,c.price,m.name as model FROM tbl_car c
                     JOIN tbl_model m ON m.id = c.modelId
                     JOIN tbl_brand b ON b.id = c.brandId
                     $conditional
@@ -278,7 +283,7 @@ require "../Layout/Header/index.php";
                                 echo '<div class="value">'.$row["country"].'</div>';
                             echo '</div>';
                         echo '</div>';
-                        echo ' <a href="" class="btn btn-contain btn-buy">Mua </a>';
+                        echo ' <a href="http://localhost/carShop/carDetail/index.php" class="btn btn-contain btn-buy">xem chi tiết</a>';
                         echo ' </div>';
                     }
                    
@@ -314,3 +319,6 @@ require "../Layout/Header/index.php";
 
 </body>
 </html>
+<?php
+    ob_flush();
+?>

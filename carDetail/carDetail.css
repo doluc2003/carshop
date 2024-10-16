@@ -1,0 +1,22 @@
+.car-banner {
+  width: 100%;
+  height: calc(100vh - 65px);
+  background-size: 100%;
+  background-position: center;
+}
+.car-content {
+  width: 1269px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.carName {
+  font-size: 40px;
+  font-weight: 400;
+  margin: 1rem 0;
+  font-family: "Anton", sans-serif;
+}
+.car-solgan {
+  margin: 1rem 0;
+  text-transform: uppercase;
+}

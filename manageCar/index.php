@@ -7,26 +7,39 @@
 </head>
 <body>
 
-    <form action="" method="post" enctype="multipart/form-data">
-        <input name="carName" type="text" placeholder="Tên xe">
-        <br>
-        <input name="carPlace" type="text" placeholder="Nơi Xuất sứ">
-        <br>
-        <p>chọn kiểu dáng xe</p>
-        <select name="model" id="">
-            <option selected value="0">--chọn--</option>
-        <?php 
+<div class="container-fluid">
+            <div class="card shadow mb-4 ">
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                        <h6 class="m-0 font-weight-bold text-primary">Thêm xe hơi </h6>
+                    </div>
+                    <div class="card-body">
+                    <form action="" method="post" enctype="multipart/form-data">
+                    <div>
+                    <h6>Tên xe</h6>
+                    <input class="form-control" name="carName" type="text" placeholder="Điền tên xe...">
+                    </div>
+                  <br>
+                    <div>
+                    <h6>Nơi sản xuất</h6>
+                    <input class="form-control" name="carPlace" type="text" placeholder="Điền nơi sản xuất">
+                    </div>
+                    
+                    <br>
+                    <p>chọn kiểu dáng xe</p>
+                    <select class="form-select" name="model" id="">
+                    <option selected value="0">--chọn--</option>
+                <?php 
                     $conn = mysqli_connect('localhost','root','','db_solarflare');
                     $sql = "SELECT * FROM `tbl_model` ";
                     $model = mysqli_query($conn,$sql);
                     while($row = mysqli_fetch_assoc($model)){
                         echo '<option value="'.$row["id"].'">'.$row['name'].'</option>';
                     }
-            ?>                                   
+                ?>                                   
         </select>
         <br>
         <p>chọn kiểu Hãng xe</p>
-        <select name="brand" id="">
+        <select  class="form-select" name="brand" id="">
         <option selected value="0">--chọn--</option>
         <?php 
             $conn = mysqli_connect('localhost','root','','db_solarflare');
@@ -39,7 +52,7 @@
                                             
         </select>
         <br>
-        <input name="colorName" type="text" placeholder="màu xe">
+        <input class="form-control" name="colorName" type="text" placeholder="màu xe">
         Thêm mã màu 
         <input name="colorCode" type="color">
         <br>
@@ -48,22 +61,22 @@
         <input name="bannerImg" type="file" accept="image/png, image/gif, image/jpeg">
         <br>
         Thêm số chỗ ngồi 
-        <input name="seat" type="number">
+        <input class="form-control" name="seat" type="number">
         <br>
         Thêm Mô tả
-        <textarea name="decription" name="" id="" cols="30" rows="10"></textarea>
+        <textarea class="form-control" name="decription" name="" id="" cols="30" rows="10"></textarea>
         <br>
         thêm giá
-        <input name="price" type="number">
+        <input class="form-control" name="price" type="number">
         <br>
         thêm số lượng xe
-        <input type="number" name="amount">
+        <input class="form-control" type="number" name="amount">
         <br>
         Thêm ảnh xe
-        <input name="img-url" type="file" accept="image/png, image/gif, image/jpeg">
+        <input class="form-control" name="img-url" type="file" accept="image/png, image/gif, image/jpeg">
         <br>
    
-       <button name="btn-submit">xác nhận</button>
+       <button class="btn btn-primary" name="btn-submit">xác nhận</button>
     </form>
     <?php
     $imgUrl ="http://localhost/carShop/Assets/img/";
@@ -119,5 +132,10 @@
         }
      }
 ?>
+
+                    </div>
+                   
+                </div>
+            </div>
 </body>
 </html>

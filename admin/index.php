@@ -12,28 +12,31 @@
     <title>admin</title>
 
     <!-- Custom fonts for this template-->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="http://localhost/solar2/carShop/admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
-
+    <link href="http://localhost/solar2/carShop/admin/css/sb-admin-2.min.css" rel="stylesheet">
+   
 </head>
 
 <body id="page-top">
-
+    <?php 
+        ob_start();
+        session_start();
+    ?>
     <!-- Page Wrapper -->
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-dark sidebar sidebar-dark accordion" id="accordionSidebar">
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="http://localhost/solar2/carShop/admin/index.php">
                 <div class="sidebar-brand-icon rotate-n-15">
-                <img style="width:2.2rem" src="http://localhost/carShop/Assets/img/Logo2.png" alt="">
+                <img style="width:2.2rem" src="http://localhost/solar2/carShop/Assets/img/Logo2.png" alt="">
                 </div>
                 <div class="sidebar-brand-text mx-3">SolarFlare </div>
             </a>
@@ -43,7 +46,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="index.php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Bảng tin</span></a>
             </li>
@@ -58,19 +61,18 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
+                <a class="nav-link" href="http://localhost/carShop/admin/manageAccount/index.php">
+                <i class="fas fa-chart-area "></i>
                     <span>Quản lý tài khoản</span></a>
             </li>
-
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
+                <a class="nav-link" href="http://localhost/carShop/admin/manageCar/index.php">
+                <i class="fas fa-solid fa-car"></i>
                     <span>Quản lý xe hơi</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
+                <a class="nav-link" href="http://localhost/carShop/admin/manageBrand/index.php">
+                <i class="fas fa-solid fa-car"></i>
                     <span>Quản lý Thương hiệu</span></a>
             </li>
             <li class="nav-item">
@@ -80,17 +82,17 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
+                <i class="fas fa-regular fa-newspaper"></i>
                     <span>Quản lý tin tức</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
+                <i class="fas fa-fw fa-chart-area"></i>
                     <span>Quản lý đăng kí lái thử</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
+                <i class="fas fa-fw fa-chart-area"></i>
                     <span>Quản lý phụ kiện </span></a>
             </li>
             <li class="nav-item">
@@ -105,7 +107,7 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
+                <i class="fas fa-fw fa-chart-area"></i>
                     <span>Quản lý hoá đơn</span></a>
             </li>
             
@@ -127,18 +129,7 @@
                     </button>
 
                     <!-- Topbar Search -->
-                    <form
-                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                        <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-                                aria-label="Search" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary" type="button">
-                                    <i class="fas fa-search fa-sm"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+                  
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
@@ -167,122 +158,7 @@
                             </div>
                         </li>
 
-                        <!-- Nav Item - Alerts -->
-                        <li class="nav-item dropdown no-arrow mx-1">
-                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-bell fa-fw"></i>
-                                <!-- Counter - Alerts -->
-                                <span class="badge badge-danger badge-counter">3+</span>
-                            </a>
-                            <!-- Dropdown - Alerts -->
-                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                aria-labelledby="alertsDropdown">
-                                <h6 class="dropdown-header">
-                                    Alerts Center
-                                </h6>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="mr-3">
-                                        <div class="icon-circle bg-primary">
-                                            <i class="fas fa-file-alt text-white"></i>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="small text-gray-500">December 12, 2019</div>
-                                        <span class="font-weight-bold">A new monthly report is ready to download!</span>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="mr-3">
-                                        <div class="icon-circle bg-success">
-                                            <i class="fas fa-donate text-white"></i>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="small text-gray-500">December 7, 2019</div>
-                                        $290.29 has been deposited into your account!
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="mr-3">
-                                        <div class="icon-circle bg-warning">
-                                            <i class="fas fa-exclamation-triangle text-white"></i>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="small text-gray-500">December 2, 2019</div>
-                                        Spending Alert: We've noticed unusually high spending for your account.
-                                    </div>
-                                </a>
-                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-                            </div>
-                        </li>
-
-                        <!-- Nav Item - Messages -->
-                        <li class="nav-item dropdown no-arrow mx-1">
-                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-envelope fa-fw"></i>
-                                <!-- Counter - Messages -->
-                                <span class="badge badge-danger badge-counter">7</span>
-                            </a>
-                            <!-- Dropdown - Messages -->
-                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                aria-labelledby="messagesDropdown">
-                                <h6 class="dropdown-header">
-                                    Message Center
-                                </h6>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_1.svg"
-                                            alt="...">
-                                        <div class="status-indicator bg-success"></div>
-                                    </div>
-                                    <div class="font-weight-bold">
-                                        <div class="text-truncate">Hi there! I am wondering if you can help me with a
-                                            problem I've been having.</div>
-                                        <div class="small text-gray-500">Emily Fowler · 58m</div>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
-                                            alt="...">
-                                        <div class="status-indicator"></div>
-                                    </div>
-                                    <div>
-                                        <div class="text-truncate">I have the photos that you ordered last month, how
-                                            would you like them sent to you?</div>
-                                        <div class="small text-gray-500">Jae Chun · 1d</div>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
-                                            alt="...">
-                                        <div class="status-indicator bg-warning"></div>
-                                    </div>
-                                    <div>
-                                        <div class="text-truncate">Last month's report looks great, I am very happy with
-                                            the progress so far, keep up the good work!</div>
-                                        <div class="small text-gray-500">Morgan Alvarez · 2d</div>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60"
-                                            alt="...">
-                                        <div class="status-indicator bg-success"></div>
-                                    </div>
-                                    <div>
-                                        <div class="text-truncate">Am I a good boy? The reason I ask is because someone
-                                            told me that people say this to all dogs, even if they aren't good...</div>
-                                        <div class="small text-gray-500">Chicken the Dog · 2w</div>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
-                            </div>
-                        </li>
+                     
 
                         <div class="topbar-divider d-none d-sm-block"></div>
 
@@ -290,9 +166,13 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">xin chào, <?php 
+                                
+                                echo $_SESSION["name"];
+                                
+                                ?></span>
                                 <img class="img-profile rounded-circle"
-                                    src="img/undraw_profile.svg">
+                                    src=<?php echo $_SESSION["img"]?> alt="ảnh đại diện">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -312,7 +192,7 @@
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Logout
+                                    Đăng xuất
                                 </a>
                             </div>
                         </li>
@@ -323,17 +203,102 @@
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
-            
+            <div class="container-fluid">
+            <div class="card shadow mb-4 ">
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                        <h6 class="m-0 font-weight-bold text-primary">DANH SÁCH XE HƠI</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="py-3 d-flex flex-row align-items-center justify-content-between">
+                        <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Tìm kiếm theo tên.."
+                                aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <a href="http://localhost/carShop/admin/manageCar/create.php" class="btn btn-success">Thêm xe hơi</a>
+                        </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                            <th scope="col">STT</th>
+                            <th scope="col">Tên xe</th>
+                            <th scope="col">Xuất xứ</th>                         
+                            <th scope="col">số lượng</th>
+                            <th scope="col">Đơn giá</th>
+                            <th scope="col">hành động</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <th scope="row">1</th>
+                            <td>senda</td>
+                            <td>Thai Lan</td>
+                            <td>200(Chiếc)</td>
+                            <td>1.000.000.000 vnđ</td>
+                            <td>
+                                <button class="btn btn-primary">sửa</button>
+                                <button class="btn btn-danger">xoá</button>
+                            </td>
+                            </tr>
+                            <tr>
+                            <th scope="row">1</th>
+                            <td>senda</td>
+                            <td>Thai Lan</td>
+                            <td>200(Chiếc)</td>
+                            <td>1.000.000.000 vnđ</td>
+                            <td>
+                                <button class="btn btn-primary">sửa</button>
+                                <button class="btn btn-danger">xoá</button>
+                            </td>
+                            </tr>
+                            <tr>
+                            <th scope="row">1</th>
+                            <td>senda</td>
+                            <td>Thai Lan</td>
+                            <td>200(Chiếc)</td>
+                            <td>1.000.000.000 vnđ</td>
+                            <td>
+                                <button class="btn btn-primary">sửa</button>
+                                <button class="btn btn-danger">xoá</button>
+                            </td>
+                            </tr>
+                        </tbody>
+                        </table>
+
+                    </div>
+                   <div class="d-flex flex-row align-items-center justify-content-center">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                             <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                </a>
+                                </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            </a>    
+                            </li>
+                            </ul>
+                            </nav>
+                   </div>
+                </div>
+            </div>
+                
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <!-- <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
-                    </div>
-                </div> -->
-            </footer>
+           
             <!-- End of Footer -->
 
         </div>
@@ -353,36 +318,45 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Bạn có muốn đăng xuất khỏi hệ thống không ?</h5>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-body">Chọn "xác nhận" để đăng xuất khỏi hệ thống </div>
                 <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+                    <button class="btn btn-danger" type="button" data-dismiss="modal">Huỷ</button>
+                    <form action="" method="post" >
+                    <button name="submit" class="btn btn-primary" href="">Xác nhận</button>
+                    </form>
+                    <?php
+                        if(isset($_POST["submit"])){
+                           
+                            session_destroy();
+                            header("location: http://localhost/carShop/Login/index.php");
+                        }
+                    ?>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="http://localhost/carShop/admin/vendor/jquery/jquery.min.js"></script>
+    <script src="http://localhost/carShop/admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="http://localhost/carShop/admin/vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+    <script src="http://localhost/carShop/admin/js/sb-admin-2.min.js"></script>
 
     <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="http://localhost/carShop/admin/vendor/chart.js/Chart.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
+    <script src="http://localhost/carShop/admin/js/demo/chart-area-demo.js"></script>
+    <script src="http://localhost/carShop/admin/js/demo/chart-pie-demo.js"></script>
 
 </body>
 

@@ -1,12 +1,21 @@
-.contain {
+.contain-login {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: red;
+  background-image: url(../Assets/img/loginwallpaper.avif);
+  background-size: 100%;
+  background-position: center;
 }
 .item {
   padding: 4rem;
   background-color: white;
   border-radius: 1rem;
+}
+.inp {
+  margin: 20px 0;
+}
+.error-messeage {
+  color: red;
+  font-size: 12px;
 }

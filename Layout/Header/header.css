@@ -34,3 +34,61 @@
   display: flex;
   align-items: center;
 }
+.cart {
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url(http://localhost/carShop/Assets/img/shopping-cart.png);
+  background-position: center;
+  background-size: 100%;
+}
+.profile {
+  position: relative;
+  box-shadow: 0 0 3px 3px rgba(124, 124, 124, 0.603);
+  width: 2rem;
+  height: 2rem;
+  background-position: center;
+  background-size: 100%;
+  border-radius: 20px;
+}
+.show {
+  display: block !important;
+}
+.bages {
+  right: -10px;
+  top: -8px;
+  position: absolute;
+  font-size: 12px;
+  background-color: red;
+  padding: 0.1rem 0.4rem;
+  color: white;
+  border-radius: 10rem;
+}
+.profile-menu {
+  z-index: 5;
+  display: none;
+  position: absolute;
+  bottom: -7.5rem;
+  left: -9rem;
+  border-radius: 1rem;
+  width: 200px;
+  box-shadow: 0 0 3px 3px rgba(161, 161, 161, 0.5);
+  background-color: white;
+  padding: 1rem 1rem;
+}
+.logout {
+  font-size: 1rem;
+  font-family: "Muli", sans-serif !important;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+.profile-menu > a {
+  text-decoration: none;
+  color: black;
+}
+.header-profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
